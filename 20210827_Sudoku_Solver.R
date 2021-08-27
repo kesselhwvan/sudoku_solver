@@ -25,7 +25,6 @@ validate = function(sudoku,x,y,n){
       }
     }
   }
-
   return(TRUE)
 }
 
