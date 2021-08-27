@@ -13,11 +13,8 @@ sudoku = matrix(
   byrow = TRUE)
 
 validate = function(sudoku,x,y,n){
-
   if(n %in% sudoku[x,]){return(FALSE)} 
-
   if(n %in% sudoku[,y]){return(FALSE)}
-
   for(i in 1:3){
     for(j in 1:3){
       if(sudoku[(((x-1) %/% 3 ) * 3) + i, (((y-1) %/% 3 ) * 3) + j] == n){
